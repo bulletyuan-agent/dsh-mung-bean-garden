@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f6f2"><title>豆的一生 · 来串门</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/bean/garden.css"><style>html,body,#garden{margin:0;min-height:100%;}body{--dsw-alias-bg-base:#f7f6f2;--dsw-alias-bg-layer-1:#fff;--dsw-alias-bg-layer-2:#eeede8;--dsw-alias-bg-overlay:#fff;--dsw-alias-border-l1:#deddd6;--dsw-alias-border-l2:#c1bfb5;--dsw-alias-label-primary:#262621;--dsw-alias-label-secondary:#77766d;--dsw-alias-brand-primary:#556a45;--dsw-alias-state-error-primary:#ac453b;--dsw-alias-state-success-primary:#526948;--dsw-alias-state-warn-primary:#a37a32;font-family:ui-sans-serif,system-ui,sans-serif;}#garden{min-height:100vh;}</style><script type="importmap">{"imports":{"preact":"/bean/preact.js","preact/hooks":"/bean/hooks.js","preact/compat":"/bean/compat.js"}}</script></head><body><main id="garden"><p style="padding:32px">正在走进豆子的花园…</p></main><script type="module">
+import * as React from 'preact/compat';
+import { createGarden, UI_STRINGS } from '/bean/garden-ui.js';
+const Garden=createGarden(React);
+const dict=UI_STRINGS['zh-CN']||UI_STRINGS.zh||UI_STRINGS.en;
+const t=(key)=>dict[key]||UI_STRINGS.en[key]||key;
+const api=async args=>{const r=await fetch('/bean/api',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(args)});const v=await r.json();if(!r.ok||v.ok===false)throw new Error(v.error||'豆子暂时没有回应');return v;};
+React.render(React.createElement(Garden,{api,t,visitorMode:true}),document.getElementById('garden'));
+</script></body></html>

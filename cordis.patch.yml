@@ -1,0 +1,5 @@
+- insert:
+    - id: mung-bean-garden
+      name: '@bulletyuan-agent/dsh-mung-bean-garden'
+      config:
+        port: 19816

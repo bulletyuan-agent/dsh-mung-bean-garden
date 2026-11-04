@@ -1,0 +1,19 @@
+{
+  "name": "@bulletyuan-agent/dsh-mung-bean-garden",
+  "version": "1.0.4",
+  "description": "A hand-drawn AI mung bean garden for DeepSeek Harness, with local JSON saves and LAN visitors.",
+  "private": true,
+  "license": "MIT",
+  "author": "bulletyuan-agent",
+  "homepage": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden#readme",
+  "repository": {"type": "git", "url": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden.git"},
+  "bugs": {"url": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden/issues"},
+  "keywords": ["dsh", "deepseek-harness", "plugin", "game", "ai", "mung-bean", "lan"],
+  "type": "module",
+  "engines": {"node": ">=22", "dsh": ">=0.2.1-rc.5"},
+  "exports": {".": "./host-1.0.4.js", "./client": "./client-1.0.4.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg"},
+  "scripts": {"build": "node build.mjs", "test": "node --test *.test.js"},
+  "files": ["index.js", "client.js", "host-1.0.4.js", "client-1.0.4.js", "client-source.js", "build.mjs", "engine.js", "garden-ui.js", "garden.css", "lan.html", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "LICENSE"],
+  "dependencies": {"preact": "10.27.2"},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}, "client": {"platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-connection", "@deepseek-ai/dsh-client-ui-conversation"]}}
+}
