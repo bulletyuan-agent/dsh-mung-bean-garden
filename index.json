@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Bean Garden · Community DSH Plugins",
+    "zh": "豆的一生 · 社区 DSH 插件源"
+  },
+  "description": {
+    "en": "Public source and pinned Git releases for the AI mung bean garden.",
+    "zh": "AI 绿豆养成插件的公开源码与固定版本安装源。"
+  },
+  "plugins": [
+    {
+      "name": "@bulletyuan-agent/dsh-mung-bean-garden",
+      "title": {
+        "en": "Bean Garden",
+        "zh": "豆的一生"
+      },
+      "description": {
+        "en": "Hand-drawn AI mung bean life cycles, local JSON saves and LAN visitor chat.",
+        "zh": "黑白手绘 AI 绿豆养成，完整生命周期、本地 JSON 存档与局域网访客聊天。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iOTIiIGhlaWdodD0iOTIiIHJ4PSIyMiIgZmlsbD0iI2Y1ZjNlYiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI4MmIyNCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0zMCAzNEMxMiA0MiAxOSA3MSA0MSA3N0M2NCA4NCA4NSA0OCA2OSAzMkM2MCAyMyA0MiAyNSAzMCAzNFoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNNDggMjhDMzYgOSA1NyA4IDcwIDEyQzY4IDI0IDYwIDI5IDQ4IDI4WiIgZmlsbD0iI2E5YmE5MSIvPjxwYXRoIGQ9Ik0zOCA0N2wtMSA1bTIwLTd2NW0tMTQgMTFxNyA2IDEyLTJNMjYgNDBxLTkgMTMtMSAyNSIvPjwvZz48L3N2Zz4K",
+      "author": "bulletyuan-agent",
+      "homepage": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden#readme",
+      "repository": {
+        "url": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden"
+      },
+      "versions": [
+        {
+          "version": "1.0.4",
+          "publishTimestamp": 1793781202,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/bulletyuan-agent/dsh-mung-bean-garden",
+            "commit": "c7c2b593212fe1eeade81e2ab51a6d2d04f25c2e"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
